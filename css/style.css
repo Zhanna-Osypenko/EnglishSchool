@@ -40,8 +40,10 @@ header .shape_1 {
 }
 
 .nav_top {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 1194px;
   margin: 0 auto;
   height: 81px;
@@ -53,13 +55,17 @@ header .shape_1 {
 .subNav li {
   display: block;
   padding: 0 5px;
+  
 }
+
+
 
 .subNav {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 12px;
 }
@@ -76,6 +82,7 @@ header .shape_1 {
 
 .subNav_name li:first-child {
   text-align: right;
+  width: 114px;
 }
 
 .subNav_name li img {
@@ -87,6 +94,15 @@ header .shape_1 {
   max-width: 30px;
   margin-right: 10px;
 }
+
+.subNav_messenger{
+    justify-content: end;
+}
+
+.subNav_contact{
+    justify-content: start;
+}
+
 
 /* =========  nav_bottom ============= */
 
@@ -125,9 +141,10 @@ header .shape_1 {
 
 .nav_bottom-list a {
   text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  /* font-weight: bold; */
+  color: rgba(255, 255, 255, 1);
+
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav_bottom-list a:hover {
@@ -1082,7 +1099,6 @@ header .shape_1 {
 
 .author-item1 p {
   padding: 10px;
-  /* border: 1px solid #ccc; */
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -1148,6 +1164,70 @@ header .shape_1 {
 }
 
 
+/* ======= international ======== */
+
+#international {
+}
+
+.international_container{
+    
+}
+
+#international h4 {
+    width: 100%;
+  font-size: 32px;
+  font-weight: normal;
+  /* margin-bottom: 64px; */
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+#international p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.international_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1145px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.international_box {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+
+  /* (1.5fr,1fr,1.5fr); */
+}
+
+.international-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  /* background: linear-gradient(
+    106.97deg,
+    rgba(238, 223, 248, 0.27) -17.42%,
+    rgba(238, 223, 248, 0.02) 102.22%
+  ); */
+  border-radius: 15px;
+  position: relative;
+  z-index: 4;
+}
+
+.international-item img {
+  margin-bottom: 20px;
+}
 
 
 
